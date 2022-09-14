@@ -30,9 +30,9 @@ const App = () => {
   };
 
   return (
-    <Flex h="100vh" align="center" justify="center" fontSize="20px" fontFamily="poppins">
-      <Box maxW={800} w="100%" h="100vh" py={10} px={2}>
-        <Button colorScheme="blue" onClick={() => [setDataEdit({}), onOpen()]}>
+    <Flex h="100vh" align="center" justify="center" fontSize="20px" fontFamily="poppins" backgroundColor="blackAlpha.900">
+      <Box maxW={1000} w="100%" h="100vh" py={10} px={2} >
+        <Button colorScheme="purple" border="2px" borderRadius={2} borderColor="white" onClick={() => [setDataEdit({}), onOpen()]}>
           NOVO CADASTRO
         </Button>
 
@@ -40,19 +40,19 @@ const App = () => {
           <Table mt="6">
             <Thead>
               <Tr>
-                <Th maxW={isMobile ? 5 : 100} fontSize="20px">
+                <Th maxW={isMobile ? 5 : 100} fontSize="20px" textColor="white">
                   Nome
                 </Th>
-                <Th maxW={isMobile ? 5 : 100} fontSize="20px">
+                <Th maxW={isMobile ? 5 : 100} fontSize="20px" textColor="white">
                   E-Mail
                 </Th>
                 <Th p={0}></Th>
                 <Th p={0}></Th>
               </Tr>
             </Thead>
-            <Tbody>
+            <Tbody textColor="white">
               {data.map(({ name, email }, index) => (
-                <Tr key={index} cursor="pointer " _hover={{ bg: "gray.100" }}>
+                <Tr key={index} cursor="pointer " _hover={{ bg: "blackAlpha.400" }}>
                   <Td maxW={isMobile ? 5 : 100}>{name}</Td>
                   <Td maxW={isMobile ? 5 : 100}>{email}</Td>
                   <Td p={0}>

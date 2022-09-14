@@ -38,7 +38,7 @@ const ModalComp = ({ data, setData, dataEdit, isOpen, onClose }) => {
 
     return (
         <>
-            <Modal isOpen={isOpen} onClose={onClose}>
+            <Modal isOpen={isOpen} onClose={onClose} backgroundColor="blackAlpha.700">
                 <ModalOverlay />
                 <ModalContent>
                     <ModalHeader>Cadastro de Clientes</ModalHeader>
@@ -51,16 +51,16 @@ const ModalComp = ({ data, setData, dataEdit, isOpen, onClose }) => {
                             </Box>
                             <Box>
                                 <FormLabel>E-mail</FormLabel>
-                                <Input type="email" value={email} onChange={(e) => setEmail(e.target.value)}/>
+                                <Input type="email"  value={email} onChange={(e) => setEmail(e.target.value)}/>
                             </Box>
                         </FormControl>
                     </ModalBody>
 
                     <ModalFooter justifyContent="start">
-                        <Button colorScheme="green" mr={3} onClick={handleSave}>
+                        <Button colorScheme="purple" mr={3} onClick={handleSave}>
                             SALVAR
                         </Button>
-                        <Button colorScheme="red" onClick={onClose}>
+                        <Button colorScheme="purple" onClick={onClose}>
                             CANCELAR
                         </Button>
                     </ModalFooter>
