@@ -1,13 +1,13 @@
 <h1 align="center"> Hey there, i'm Nich, and this is my first Crud System with React</h1>
  
 <p align="center">
-  <img src="https://github.com/italicnich/crud/blob/master/readmeimg/img-gif.gif" alt="Page Preview">
+  <img src="https://github.com/DevLass/crud/blob/master/readmeimg/img-gif.gif" alt="Page Preview">
 </p>
 
 <h3 align="justify"> <i> This is a simple Crud made with react and chakra-UI. It has the function of adding a name and email, deleting, editing, and also checking if the email already exists in the database, using react hooks like useEffect, useState. </i> </h3>
 
 <p align="center">
-  <img src="https://github.com/italicnich/crud/blob/master/readmeimg/img-gif-2.gif" alt="Page Preview">
+  <img src="https://github.com/DevLass/crud/blob/master/readmeimg/img-gif-2.gif" alt="Page Preview">
 </p>
 
 <h3 align="justify"> <i> But maybe the real shine is <a href="https://chakra-ui.com/">chakra-UI</a>, it makes the project development much easier, allowing the complete absence of CSS files.</i> </h3>
